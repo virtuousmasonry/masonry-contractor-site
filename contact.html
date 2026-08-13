@@ -76,13 +76,13 @@
       <h2 style="margin: 0; font-size: 32px; font-weight: 900; letter-spacing: -0.03em;">Request an estimate</h2>
       <p style="margin: 0 0 6px 0; font-size: 15px; line-height: 1.5; opacity: 0.92;">Takes a minute. We reply by phone, usually the same day.</p>
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
-        <input type="text" required placeholder="Name" style="padding: 15px; border: 2px solid rgba(243,242,242,0.6); background: #f3f2f2; color: #201e1d; font-size: 16px; border-radius: 0;">
-        <input type="tel" required placeholder="Phone" style="padding: 15px; border: 2px solid rgba(243,242,242,0.6); background: #f3f2f2; color: #201e1d; font-size: 16px; border-radius: 0;">
+        <input type="text" name="name" required placeholder="Name" style="padding: 15px; border: 2px solid rgba(243,242,242,0.6); background: #f3f2f2; color: #201e1d; font-size: 16px; border-radius: 0;">
+        <input type="tel" name="phone" required placeholder="Phone" style="padding: 15px; border: 2px solid rgba(243,242,242,0.6); background: #f3f2f2; color: #201e1d; font-size: 16px; border-radius: 0;">
       </div>
-      <input type="email" placeholder="Email (optional)" style="padding: 15px; border: 2px solid rgba(243,242,242,0.6); background: #f3f2f2; color: #201e1d; font-size: 16px; border-radius: 0;">
-      <input type="text" placeholder="Job address or town" style="padding: 15px; border: 2px solid rgba(243,242,242,0.6); background: #f3f2f2; color: #201e1d; font-size: 16px; border-radius: 0;">
+      <input type="email" name="email" placeholder="Email (optional)" style="padding: 15px; border: 2px solid rgba(243,242,242,0.6); background: #f3f2f2; color: #201e1d; font-size: 16px; border-radius: 0;">
+      <input type="text" name="address" placeholder="Job address or town" style="padding: 15px; border: 2px solid rgba(243,242,242,0.6); background: #f3f2f2; color: #201e1d; font-size: 16px; border-radius: 0;">
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
-        <select style="padding: 15px; border: 2px solid rgba(243,242,242,0.6); background: #f3f2f2; color: #201e1d; font-size: 16px; border-radius: 0;">
+        <select name="project_type" style="padding: 15px; border: 2px solid rgba(243,242,242,0.6); background: #f3f2f2; color: #201e1d; font-size: 16px; border-radius: 0;">
           <option>Type of work</option>
           <option>Patio or walkway</option>
           <option>Retaining wall</option>
@@ -94,7 +94,7 @@
           <option>Concrete or foundation</option>
           <option>Commercial / GC package</option>
         </select>
-        <select style="padding: 15px; border: 2px solid rgba(243,242,242,0.6); background: #f3f2f2; color: #201e1d; font-size: 16px; border-radius: 0;">
+        <select name="timeline" style="padding: 15px; border: 2px solid rgba(243,242,242,0.6); background: #f3f2f2; color: #201e1d; font-size: 16px; border-radius: 0;">
           <option>Timeline</option>
           <option>As soon as possible</option>
           <option>Next 1&ndash;3 months</option>
@@ -102,7 +102,7 @@
           <option>Just pricing it out</option>
         </select>
       </div>
-      <textarea rows="5" placeholder="Describe the job &mdash; size, condition, anything unusual" style="padding: 15px; border: 2px solid rgba(243,242,242,0.6); background: #f3f2f2; color: #201e1d; font-size: 16px; border-radius: 0; resize: vertical;"></textarea>
+      <textarea rows="5" name="message" placeholder="Describe the job &mdash; size, condition, anything unusual" style="padding: 15px; border: 2px solid rgba(243,242,242,0.6); background: #f3f2f2; color: #201e1d; font-size: 16px; border-radius: 0; resize: vertical;"></textarea>
       <button type="submit" data-sent-label="Request received" style="display: flex; align-items: center; justify-content: flex-start; padding: 20px; background: #201e1d; color: #f3f2f2; border: 0; border-radius: 0; font-size: 15px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer;" style-hover="background: #f3f2f2; color: #201e1d;">Send my request</button>
       <p class="form-thanks" style="display: none; margin: 0; padding: 14px 16px; background: #201e1d; font-size: 15px; color: #ff9783;">Sent. Expect a call from a (703) number.</p>
       <span style="font-size: 13px; line-height: 1.5; opacity: 0.85;">Photos help. Text them to (703) 659-5310 after you send this.</span>
