@@ -241,11 +241,11 @@
     </div>
     <form data-estimate-form style="padding: 72px 48px; display: flex; flex-direction: column; gap: 18px; background: #201e1d;">
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
-        <input type="text" required placeholder="Name" style="padding: 16px; border: 2px solid rgba(243,242,242,0.35); background: #2d2b2b; color: #f3f2f2; font-size: 16px; border-radius: 0;">
-        <input type="tel" required placeholder="Phone" style="padding: 16px; border: 2px solid rgba(243,242,242,0.35); background: #2d2b2b; color: #f3f2f2; font-size: 16px; border-radius: 0;">
+        <input type="text" name="name" required placeholder="Name" style="padding: 16px; border: 2px solid rgba(243,242,242,0.35); background: #2d2b2b; color: #f3f2f2; font-size: 16px; border-radius: 0;">
+        <input type="tel" name="phone" required placeholder="Phone" style="padding: 16px; border: 2px solid rgba(243,242,242,0.35); background: #2d2b2b; color: #f3f2f2; font-size: 16px; border-radius: 0;">
       </div>
-      <input type="text" placeholder="Address or town" style="padding: 16px; border: 2px solid rgba(243,242,242,0.35); background: #2d2b2b; color: #f3f2f2; font-size: 16px; border-radius: 0;">
-      <select style="padding: 16px; border: 2px solid rgba(243,242,242,0.35); background: #2d2b2b; color: #f3f2f2; font-size: 16px; border-radius: 0;">
+      <input type="text" name="address" placeholder="Address or town" style="padding: 16px; border: 2px solid rgba(243,242,242,0.35); background: #2d2b2b; color: #f3f2f2; font-size: 16px; border-radius: 0;">
+      <select name="project_type" style="padding: 16px; border: 2px solid rgba(243,242,242,0.35); background: #2d2b2b; color: #f3f2f2; font-size: 16px; border-radius: 0;">
         <option>What do you need? &mdash; pick one</option>
         <option>Patio or walkway</option>
         <option>Retaining wall</option>
@@ -257,7 +257,7 @@
         <option>Concrete or foundation</option>
         <option>Commercial project</option>
       </select>
-      <textarea rows="4" placeholder="Tell us about the job" style="padding: 16px; border: 2px solid rgba(243,242,242,0.35); background: #2d2b2b; color: #f3f2f2; font-size: 16px; border-radius: 0; resize: vertical;"></textarea>
+      <textarea rows="4" name="message" placeholder="Tell us about the job" style="padding: 16px; border: 2px solid rgba(243,242,242,0.35); background: #2d2b2b; color: #f3f2f2; font-size: 16px; border-radius: 0; resize: vertical;"></textarea>
       <button type="submit" data-sent-label="Sent" style="display: flex; align-items: center; justify-content: flex-start; padding: 20px; background: #ec3013; color: #f3f2f2; border: 0; border-radius: 0; font-size: 15px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer;" style-hover="background: #ff563c;">Send it over</button>
       <p class="form-thanks" style="display: none; margin: 0; padding: 14px 16px; border: 2px solid #ff563c; background: #2d2b2b; font-size: 15px; color: #ff9783;">Thanks &mdash; we&rsquo;ll call you back within one business day.</p>
     </form>
