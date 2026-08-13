@@ -21,27 +21,4 @@ document.addEventListener('DOMContentLoaded', () => {
         els.forEach((el, i) => {
           el.style.willChange = 'opacity, transform';
           el.style.opacity = '0';
-          el.style.transition = ease;
-          if (i > 0) el.style.transform = 'translateY(22px)';
-        });
-        const show = (el) => { el.style.opacity = '1'; el.style.transform = 'none'; };
-        requestAnimationFrame(() => show(els[0]));
-        const io = new IntersectionObserver((entries) => {
-          entries.forEach((e) => { if (e.isIntersecting) { show(e.target); io.unobserve(e.target); } });
-        }, { rootMargin: '0px 0px -10% 0px', threshold: 0.06 });
-        els.slice(1).forEach((el) => io.observe(el));
-      }
-    });
-  }
-
-  // Estimate / contact form submit
-  document.querySelectorAll('form[data-estimate-form]').forEach((form) => {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const btn = form.querySelector('button[type="submit"]');
-      const thanks = form.querySelector('.form-thanks');
-      if (btn) btn.textContent = btn.getAttribute('data-sent-label') || 'Sent';
-      if (thanks) thanks.style.display = 'block';
-    });
-  });
-});
+          el.style.transition =
